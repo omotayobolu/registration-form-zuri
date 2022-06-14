@@ -32,8 +32,7 @@ p {
 }
 
 .container {
-  margin: 10% 15%;
-  position: fixed;
+  margin: 5% 15%;
 }
 
 body {
@@ -48,22 +47,19 @@ body {
 }
 
 .registration-text {
-  padding-top: 5rem;
+  padding-top: 7rem;
   width: 90%;
   max-width: 100%;
-}
-
-.registration-form {
-  margin-top: -2rem;
 }
 
 form {
   background-color: #ffffff;
   padding: 20px;
-  height: 60vh;
+  height: 80vh;
   border-radius: 5px;
   display: grid;
   place-items: center;
+  box-shadow: 0px 5px rgba(51, 51, 51, 0.5);
 }
 
 .enter {
@@ -90,6 +86,7 @@ form {
   background-color: var(--blue);
   margin-bottom: 30px;
   border-radius: 5px;
+  box-shadow: 0px 5px rgba(51, 51, 51, 0.5);
 }
 
 .reg-form-btn span {
@@ -108,6 +105,11 @@ form {
   font-weight: 600;
 }
 
+.submit-btn:hover {
+  background-color: hsl(154, 39%, 51%);
+  color: var(--grayish-blue);
+}
+
 form p {
   color: var(--grayish-blue);
   font-size: 0.6rem;
@@ -116,4 +118,14 @@ form p {
 form p span {
   color: var(--red);
   font-weight: 400;
+}
+
+.error-message {
+  display: flex;
+  justify-content: end;
+}
+
+.error-message p {
+  color: var(--red);
+  font-style: italic;
 }
