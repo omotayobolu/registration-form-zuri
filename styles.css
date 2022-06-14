@@ -119,13 +119,3 @@ form p span {
   color: var(--red);
   font-weight: 400;
 }
-
-.error-message {
-  display: flex;
-  justify-content: end;
-}
-
-.error-message p {
-  color: var(--red);
-  font-style: italic;
-}
