@@ -33,33 +33,33 @@
             <button class="reg-form-btn">
               Try it free 7 days <span>then $20/mo. there after</span>
             </button>
-            <form>
-              <input
-                class="enter"
-                type="text"
-                placeholder="First Name"
-                required
-              />
-              <input
-                class="enter"
-                type="text"
-                placeholder="Last Name"
-                required
-              />
+            <form className="form">
+              <div class="row">
+                <label for="firstName">First Name</label>
+                <input id="" firstName class="enter firstName" type="text" />
+                <div class="error"></div>
+              </div>
 
-              <input
-                class="enter"
-                type="email"
-                placeholder="Email Address"
-                required
-              />
-              <input
-                class="enter"
-                type="password"
-                placeholder="Password"
-                required
-              />
-              <button class="submit-btn">Claim Your Free Trial</button>
+              <div class="row">
+                <label for="lastName">Last Name</label>
+                <input id="lastName" class="enter lastName" type="text" />
+                <div class="error"></div>
+              </div>
+
+              <div class="row">
+                <label for="email">Email</label>
+                <input id="email" class="enter" type="email" />
+                <div class="error"></div>
+              </div>
+
+              <div class="row">
+                <label for="password">Password</label>
+                <input id="password" class="enter" type="password" />
+                <div class="error"></div>
+              </div>
+              <button type="submit" class="submit-btn">
+                Claim Your Free Trial
+              </button>
               <p>
                 By clicking the button you are agreeing to our
                 <span>Terms and Services</span>
@@ -69,5 +69,7 @@
         </div>
       </div>
     </main>
+
+    <script src="index.js"></script>
   </body>
 </html>
